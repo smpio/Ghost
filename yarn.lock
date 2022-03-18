@@ -2227,13 +2227,13 @@
     papaparse "5.3.1"
     pump "^3.0.0"
 
-"@tryghost/members-events-service@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@tryghost/members-events-service/-/members-events-service-0.3.1.tgz#209758435bd6aebe46426a440e68d76541ce095e"
-  integrity sha512-bpjKYSzp1UjR6IPzzVLjoeSCbKT0rC7dr1SCwziavTD/2IuUA+ZKqxpPBeiGiQW+YFEvY6/NKXME+dr68fO6fw==
+"@tryghost/members-events-service@0.3.2":
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/@tryghost/members-events-service/-/members-events-service-0.3.2.tgz#0f1a4e85b820184ceb29f46ce8c4cc7abf9c1d79"
+  integrity sha512-Z2vF1N6VJSmS1/1PHqi8+6xLeNW1Vs7IeHtILbCL7abmx/jcKFpPz9T8zVYSSJoGs7NjY5QMJThlMQZFhQ7usg==
   dependencies:
-    "@tryghost/domain-events" "0.1.8"
-    "@tryghost/member-events" "0.4.0"
+    "@tryghost/domain-events" "^0.1.9"
+    "@tryghost/member-events" "^0.4.1"
     moment-timezone "0.5.34"
 
 "@tryghost/members-importer@0.5.3":
