@@ -1863,7 +1863,7 @@
     "@tryghost/debug" "^0.1.9"
     lodash "^4.17.20"
 
-"@tryghost/errors@1.2.5", "@tryghost/errors@^1.0.0", "@tryghost/errors@^1.1.0", "@tryghost/errors@^1.1.1", "@tryghost/errors@^1.2.1", "@tryghost/errors@^1.2.3", "@tryghost/errors@^1.2.4":
+"@tryghost/errors@1.2.5", "@tryghost/errors@^1.0.0", "@tryghost/errors@^1.1.0", "@tryghost/errors@^1.1.1", "@tryghost/errors@^1.2.1", "@tryghost/errors@^1.2.3", "@tryghost/errors@^1.2.4", "@tryghost/errors@^1.2.5":
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/@tryghost/errors/-/errors-1.2.5.tgz#e3dd6a462364f899e5267e282fe690ecfbdb4ea2"
   integrity sha512-6lsnonu7XI556Sg8j8Svlmaoen6DVVnRch3sPFu2Ugohbprzz3eQiJzNXXXaeIRgwBkTcSPHErYNMIf3fiI5Aw==
@@ -2297,18 +2297,18 @@
   dependencies:
     bluebird "^3.7.2"
 
-"@tryghost/request@0.1.17":
-  version "0.1.17"
-  resolved "https://registry.yarnpkg.com/@tryghost/request/-/request-0.1.17.tgz#0028fbe73f9926d2503112df650589bf014285f8"
-  integrity sha512-h2bWqK5IRt9ihtqcFGlEyHzBJkAwMIzAMm975FeHeLnAlb8R6e1FhrJX1EFCi7ytAVQLCst17J5nPrdcJP5mVg==
+"@tryghost/request@0.1.18":
+  version "0.1.18"
+  resolved "https://registry.yarnpkg.com/@tryghost/request/-/request-0.1.18.tgz#a9c0f9b7be4401c6c8bc39f082ea624931c4b71a"
+  integrity sha512-/bYhTwtqpHfjUSw5rPlZpEtWRuytV2kyVYFUT6kgrUqjrnYLXgAJ6f5xG5i1o/RE5SEg6MEnH6BAl2w/I05KDw==
   dependencies:
-    "@tryghost/errors" "^1.2.4"
-    "@tryghost/validator" "^0.1.15"
+    "@tryghost/errors" "^1.2.5"
+    "@tryghost/validator" "^0.1.16"
     "@tryghost/version" "^0.1.11"
     got "9.6.0"
     lodash "^4.17.21"
 
-"@tryghost/root-utils@0.3.11", "@tryghost/root-utils@^0.3.10", "@tryghost/root-utils@^0.3.11", "@tryghost/root-utils@^0.3.8":
+"@tryghost/root-utils@0.3.11", "@tryghost/root-utils@^0.3.11", "@tryghost/root-utils@^0.3.8":
   version "0.3.11"
   resolved "https://registry.yarnpkg.com/@tryghost/root-utils/-/root-utils-0.3.11.tgz#4c3a045c89c75301435b1d1db1946072b3ee3adf"
   integrity sha512-1q01HsaqQSpFPVcq7tqkIUXa/L1P7yXNGbGJCeZ/IyfrSd/OdgQTluwz0BYzJc1mBP+5lIumqARr+XdbE/ZbAQ==
@@ -2401,12 +2401,23 @@
     remark-footnotes "^1.0.0"
     unist-util-visit "^2.0.0"
 
-"@tryghost/validator@0.1.15", "@tryghost/validator@^0.1.15":
+"@tryghost/validator@0.1.15":
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/@tryghost/validator/-/validator-0.1.15.tgz#2756b63ee208618505f59f921b47714605e0d7f1"
   integrity sha512-g6N3G/E1vnNhECFRQOvuhntM5X33vcnwYYhexsOYzUb6agaQi7qZHxvLABE6lXslN2AGpjkU8XL0FkdRiQ7+gg==
   dependencies:
     "@tryghost/errors" "^1.2.4"
+    "@tryghost/tpl" "^0.1.12"
+    lodash "^4.17.21"
+    moment-timezone "0.5.23"
+    validator "7.2.0"
+
+"@tryghost/validator@^0.1.16":
+  version "0.1.16"
+  resolved "https://registry.yarnpkg.com/@tryghost/validator/-/validator-0.1.16.tgz#32f81975b82f1248f8200573bb59117a9b716e5a"
+  integrity sha512-QRM9zVHa84QIWrzYMHAPi0CJr9kSxSbcngERwSerZ+I5jm6SxD6jPfDND6xwYiNs1bYka5HkWCAHCHYKNZcQWw==
+  dependencies:
+    "@tryghost/errors" "^1.2.5"
     "@tryghost/tpl" "^0.1.12"
     lodash "^4.17.21"
     moment-timezone "0.5.23"
@@ -4580,7 +4591,7 @@ dicer@0.2.5:
     readable-stream "1.1.x"
     streamsearch "0.1.2"
 
-diff-sequences@^27.5.0, diff-sequences@^27.5.1:
+diff-sequences@^27.5.1:
   version "27.5.1"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-27.5.1.tgz#eaecc0d327fd68c8d9672a1e64ab8dccb2ef5327"
   integrity sha512-k1gCAXAsNgLwEL+Y8Wvl+M6oEFj5bgazfZULpS5CneoPPXRaCCW7dm+q21Ky2VEE5X+VeRDBVg1Pcvvsr4TtNQ==
@@ -8653,11 +8664,6 @@ microsoft-capitalize@~1.0.5:
   resolved "https://registry.yarnpkg.com/microsoft-capitalize/-/microsoft-capitalize-1.0.5.tgz#bcaf915039f14224c8cfd74c31cea42fecacbb31"
   integrity sha512-iqDMU9J643BHg8Zp7EMZNLTp6Pgs2f1S2SMnCW2VlUqMs17xCZ5vwVjalBJEGVcUfG+/1ePqeEGcMW3VfzHK5A==
 
-mime-db@1.51.0:
-  version "1.51.0"
-  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.51.0.tgz#d9ff62451859b18342d960850dc3cfb77e63fb0c"
-  integrity sha512-5y8A56jg7XVQx2mbv1lu49NR4dokRnhZYTtL+KGfaa27uq4pSTXkwQkFJl4pkRMyNFz/EtYDSkiiEHx3F7UN6g==
-
 mime-db@1.52.0, "mime-db@>= 1.43.0 < 2":
   version "1.52.0"
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
@@ -8987,7 +8993,7 @@ nanoclone@^0.2.1:
   resolved "https://registry.yarnpkg.com/nanoclone/-/nanoclone-0.2.1.tgz#dd4090f8f1a110d26bb32c49ed2f5b9235209ed4"
   integrity sha512-wynEP02LmIbLpcYw8uBKpcfF6dmg2vcpKqxeH5UcoKEYdExslsdUA4ugFauuaeYdTB76ez6gJW8XAZ6CgkXYxA==
 
-nanoid@3.3.1, nanoid@^3.2.0, nanoid@^3.3.1:
+nanoid@3.3.1, nanoid@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.1.tgz#6347a18cac88af88f58af0b3594b723d5e99bb35"
   integrity sha512-n6Vs/3KGyxPQd6uO0eH4Bv0ojGSUvuLlIHtC3Y0kEO23YRge8H9x1GCzLn28YX0H66pMkxuaeESFq4tKISKwdw==
