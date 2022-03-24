@@ -1,5 +1,5 @@
 {
-  "name": "ghost",
+  "name": "@smp/ghost",
   "version": "4.41.0",
   "description": "The professional publishing platform",
   "author": "Ghost Foundation",
