@@ -2,6 +2,29 @@ const debug = require('@tryghost/debug')('api:canary:utils:serializers:output:po
 const mappers = require('./mappers');
 const membersService = require('../../../../../services/members');
 
+const postRewriter = (post) => {
+    const replacer = (str) => str.replace('Instagram', 'Instagram*')
+        .replace('instagram', 'instagram')
+        .replace('Инстаграм', 'Инстаграм*')
+        .replace('инстаграм', 'инстаграм*')
+        .replace('Facebook', 'Facebook*')
+        .replace('facebook', 'facebook*')
+        .replace('Фэйсбук', 'Фэйсбук*')
+        .replace('фэйсбук', 'фэйсбук*')
+        .replace('Фейсбук', 'Фейсбук*')
+        .replace('фейсбук', 'фейсбук*');
+
+    if (post.html) {
+        post.html = replacer(post.html);
+    }
+
+    if (post.title) {
+        post.title = replacer(post.title);
+    }
+
+    return post;
+};
+
 module.exports = {
     async all(models, apiConfig, frame) {
         debug('all');
@@ -19,7 +42,7 @@ module.exports = {
         if (models.meta) {
             for (let model of models.data) {
                 let post = await mappers.posts(model, frame, {tiers});
-                posts.push(post);
+                posts.push(postRewriter(post));
             }
             frame.response = {
                 posts,
@@ -30,7 +53,7 @@ module.exports = {
         }
         let post = await mappers.posts(models, frame, {tiers});
         frame.response = {
-            posts: [post]
+            posts: [postRewriter(post)]
         };
     }
 };
